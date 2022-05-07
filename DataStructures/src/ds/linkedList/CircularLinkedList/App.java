@@ -1,4 +1,4 @@
-package ds.linedList.CircularLinkedList;
+package ds.linkedList.CircularLinkedList;
 
 public class App {
 	public static void main(String[] args) {

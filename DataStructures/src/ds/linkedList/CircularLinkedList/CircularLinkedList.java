@@ -1,6 +1,6 @@
-package ds.linedList.CircularLinkedList;
+package ds.linkedList.CircularLinkedList;
 
-import ds.linedList.singlyLinkedList.Node;
+import ds.linkedList.singlyLinkedList.Node;
 
 public class CircularLinkedList {
 	private Node first;

@@ -1,4 +1,4 @@
-package ds.linedList;
+package ds.linkedList;
 
 public class Node {
 int data;

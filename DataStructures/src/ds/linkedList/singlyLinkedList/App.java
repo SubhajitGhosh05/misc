@@ -1,4 +1,4 @@
-package ds.linedList.singlyLinkedList;
+package ds.linkedList.singlyLinkedList;
 
 public class App {
 	public static void main(String[] args) {
