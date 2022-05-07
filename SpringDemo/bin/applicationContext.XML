@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+
+	<!-- Define your beans here -->
+
+	<!-- define the dependency -->
+	<!-- Load Properties File -->
+	<context:property-placeholder
+		location="classpath:sport.properties" />
+	<bean class="com.spingBasics.HappyFortuneService" id="myFortunes">
+
+	</bean>
+
+
+	<bean class="com.spingBasics.TrackCoach" id="myCoach">
+
+		<!-- <bean class="com.spingBasics.BaseballCoach" id="myCoach" > -->
+		<!-- Set up Constructor Injection -->
+		<constructor-arg ref="myFortunes" />
+	</bean>
+
+
+
+
+	<bean id="myCricketCoach" class="com.spingBasics.CricketCoach">
+		<!-- Set up Setter injections -->
+		<property name="fortuneService" ref="myFortunes"></property>
+		<!-- Inject Literal Values -->
+		<!-- <property name="emailAddress" value="speak.subhajitghosh@gmail.com"></property> 
+			<property name="team" value="India"></property> -->
+
+		<property name="emailAddress" value="${foo.email}"></property>
+		<property name="team" value="${foo.team}"></property>
+
+	</bean>
+
+
+</beans>
