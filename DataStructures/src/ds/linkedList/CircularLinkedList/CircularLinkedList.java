@@ -1,6 +1,5 @@
 package ds.linkedList.CircularLinkedList;
 
-import ds.linkedList.singlyLinkedList.Node;
 
 public class CircularLinkedList {
 	private Node first;
@@ -50,7 +49,7 @@ public class CircularLinkedList {
 		System.out.println("List (first --> last) ");
 		Node current = first;
 		while (current != null) {
-			current.displayNoode();
+			current.displayNode();
 			current = current.next;
 		}
 		System.out.println();

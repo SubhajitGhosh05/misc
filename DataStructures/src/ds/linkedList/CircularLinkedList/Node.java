@@ -3,7 +3,8 @@ package ds.linkedList.CircularLinkedList;
 public class Node {
 public int data;
 public Node next;
-public void displayNoode() {
+public void displayNode() {
 	System.out.println("{ "+data+"} ");
 }
+
 }

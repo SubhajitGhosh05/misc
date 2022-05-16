@@ -16,8 +16,10 @@ public class App {
 		 mylist.deleteFirst();
 		 System.out.println("----------");
 		mylist.displayList();
-		mylist.deleteNode(30);
+		mylist.deleteNode(130);
+		mylist.removeLast();
 		System.out.println("----------");
 		mylist.displayList();
+		System.out.println(mylist.getSize());
 	}
 }
